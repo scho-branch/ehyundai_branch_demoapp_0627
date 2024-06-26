@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import Logo from "../img/logo.svg";
 import { BsBag } from "react-icons/bs";
 
+
+
 const Header = () => {
   // header state
   const [isActive, setIsActive] = useState(false);
