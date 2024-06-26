@@ -40,7 +40,9 @@ const ProductDetails = () => {
             <h1 className="text-[26px] font-medium mb-2 max-w-[450px] mx-auto lg:mx-0">{title}</h1>
             {/* <div className="text-2xl text-red-500 font-medium mb-6">$ {price}</div> */}
             <p className="mb-8">{description}</p>
-            <button onClick={()=>addToCart(product, product.id)} className='bg-primary py-4 px-8 text-white'>Add to cart</button>
+            <a href="https://09uc2.test-app.link/rtJ2bRYkJKb">
+            <button onClick={()=>addToCart(product, product.id)} className='bg-primary py-4 px-8 text-white'>앱에서 자세히 보기</button>
+            </a>
           </div>
         </div>
       </div>
