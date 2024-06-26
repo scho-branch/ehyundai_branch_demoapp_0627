@@ -29,9 +29,9 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid'
 
 const products = [
-  { name: `Women's Clothing`, description: 'Get a better understanding of your traffic', href: '#', icon: ChartPieIcon },
-  { name: `Men's Clothing`, description: 'Speak directly to your customers', href: '#', icon: CursorArrowRaysIcon },
-  { name: 'Jewelry', description: 'Your customers’ data will be safe and secure', href: '#', icon: FingerPrintIcon },
+  { name: `가이드`, description: '', href: '#', icon: ChartPieIcon },
+  { name: `프로모션`, description: '', href: '#', icon: CursorArrowRaysIcon },
+  { name: '이벤트', description: '', href: '#', icon: FingerPrintIcon },
 ]
 const callsToAction = [
   { name: 'Watch demo', href: '#', icon: PlayCircleIcon },
@@ -81,7 +81,7 @@ const Header2 = () => {
           <PopoverGroup className="hidden lg:flex lg:gap-x-12">
             <Popover className="relative">
               <PopoverButton className="flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900">
-                NEW & FEATURED
+                서비스/이벤트
                 <ChevronDownIcon className="h-5 w-5 flex-none text-gray-400" aria-hidden="true" />
               </PopoverButton>
   
@@ -119,30 +119,21 @@ const Header2 = () => {
             </Popover>
   
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              MEN
+              브랜드
             </a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              WOMEN
+              전시공연
             </a>
             <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              KIDS
+              상품권
             </a>
-            <a href="#" className="text-sm font-semibold leading-6 text-gray-900">
-              READ
-            </a>
+
           </PopoverGroup>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-                {/* cart */}
-                <div
-                onClick={() => setIsOpen(!isOpen)}
-                className="cursor-pointer flex relative"
-                >
-                <BsBag className="text-2xl" />
-                    <div className="bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
-                        {itemAmount}
-                    </div>
-                </div>
-          </div>
+
+
+
+
+
         </nav>
         <Dialog className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-10" />
@@ -233,32 +224,22 @@ const Header2 = () => {
 
 
           
-//   <header
-//   className={`${
-//     isActive ? "bg-white py-4 shadow-md" : "bg-none py-6"
-//   } fixed w-full z-10 lg:px-8 transition-all`}
-// >
-//   <div className="container mx-auto flex items-center justify-between h-full">
-//     <Link to={"/"}>
-//       <div className="w-[40px]">
-//         <img src={Logo} alt="" />
-//       </div>
-//     </Link>
 
-//     {/* cart */}
-//     <div
-//       onClick={() => setIsOpen(!isOpen)}
-//       className="cursor-pointer flex relative"
-//     >
-//       <BsBag className="text-2xl" />
+
+
+
+
+
+
+//   <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+//   {/* cart */}
+//   <div
+//   onClick={() => setIsOpen(!isOpen)}
+//   className="cursor-pointer flex relative"
+//   >
+//   <BsBag className="text-2xl" />
 //       <div className="bg-red-500 absolute -right-2 -bottom-2 text-[12px] w-[18px] h-[18px] text-white rounded-full flex justify-center items-center">
-//         {itemAmount}
+//           {itemAmount}
 //       </div>
-//     </div>
 //   </div>
-// </header>
-
-  
-
-
-
+// </div>
